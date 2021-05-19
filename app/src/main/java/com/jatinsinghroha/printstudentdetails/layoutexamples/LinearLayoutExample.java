@@ -1,6 +1,8 @@
-package com.jatinsinghroha.printstudentdetails;
+package com.jatinsinghroha.printstudentdetails.layoutexamples;
 
 import android.os.Bundle;
+
+import com.jatinsinghroha.printstudentdetails.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 

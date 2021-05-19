@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".layoutexamples.RelativeLayoutExample">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/cat" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/centerImage"
+        android:src="@drawable/cat"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageView
+        android:id="@+id/leftTop"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_above="@id/centerImage"
+        android:layout_toLeftOf="@+id/centerImage"
+        android:src="@drawable/dog" />
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/bottomRight"
+        android:src="@drawable/dog"
+        android:layout_toRightOf="@+id/centerImage"
+        android:layout_below="@id/centerImage"
+        />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/bottomOfRightDog"
+        android:src="@drawable/cat"
+        android:layout_below="@id/bottomRight"
+        android:layout_alignEnd = "@id/bottomRight"
+        />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_marginTop="8dp"
+        android:id="@+id/saveCatsSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hide Dogs and Save Cat"
+        android:layout_marginHorizontal="16dp"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>

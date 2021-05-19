@@ -9,21 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PrintStudentDetails">
-        <activity android:name=".MainActivity3">
+        <activity android:name=".layoutexamples.RelativeLayoutExample">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LinearLayoutExample">
+        <activity android:name=".layoutexamples.FrameLayoutActivity">
+
         </activity>
+        <activity android:name=".layoutexamples.LinearLayoutExample"></activity>
         <activity
             android:name=".MainActivity2"
             android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

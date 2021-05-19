@@ -1,4 +1,4 @@
-package com.jatinsinghroha.printstudentdetails;
+package com.jatinsinghroha.printstudentdetails.layoutexamples;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,11 +6,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.jatinsinghroha.printstudentdetails.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 import es.dmoral.toasty.Toasty;
 
-public class MainActivity3 extends AppCompatActivity {
+public class FrameLayoutActivity extends AppCompatActivity {
 
     FloatingActionButton mComposeFAB;
     TextView mCheckMail;
@@ -26,7 +27,7 @@ public class MainActivity3 extends AppCompatActivity {
         mComposeFAB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toasty.success(MainActivity3.this, "Compose Clicked", Toasty.LENGTH_LONG, true).show();
+                Toasty.success(FrameLayoutActivity.this, "Compose Clicked", Toasty.LENGTH_LONG, true).show();
             }
         });
 
@@ -47,7 +48,7 @@ public class MainActivity3 extends AppCompatActivity {
                 else{
                     mCheckMail.setText("Check your emails");
                 }
-                Toast.makeText(MainActivity3.this, mCheckMail.getText()+ "", Toast.LENGTH_LONG ).show();
+                Toast.makeText(FrameLayoutActivity.this, mCheckMail.getText()+ "", Toast.LENGTH_LONG ).show();
             }
         });
     }
