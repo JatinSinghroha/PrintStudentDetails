@@ -9,17 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PrintStudentDetails">
-        <activity android:name=".layoutexamples.RelativeLayoutExample">
+        <activity android:name=".layoutexamples.ConstraintLayoutExample">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".layoutexamples.FrameLayoutActivity">
+        <activity android:name=".layoutexamples.RelativeLayoutExample">
 
         </activity>
-        <activity android:name=".layoutexamples.LinearLayoutExample"></activity>
+        <activity android:name=".layoutexamples.FrameLayoutActivity"></activity>
+        <activity android:name=".layoutexamples.LinearLayoutExample" />
         <activity
             android:name=".MainActivity2"
             android:screenOrientation="portrait" />
